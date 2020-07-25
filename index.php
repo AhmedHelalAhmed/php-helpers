@@ -2,18 +2,29 @@
 
 require 'helpers.php';
 
+printSeparator();
+echo '========(Is Pattern Exists)==========';
+printSeparator();
+
 if (isPatternExists("hello", "hello world!")) {
     echo 'exists';
 } else {
     echo 'not exists';
 }
 
-echo "<br/>";
-echo "===============================";
-echo "<br/>";
+printSeparator();
+echo '=========(Filter HTML)===========';
+printSeparator();
 
 echo filterHTML('<b>test</b>');
 
-echo "<br/>";
-echo "===============================";
-echo "<br/>";
+printSeparator();
+echo '========(advanced Debug)==========';
+printSeparator();
+
+advancedDebug([
+    'name'=>'Ahmed Helal',
+    'age'=>26
+]);
+
+printSeparator();

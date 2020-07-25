@@ -15,3 +15,27 @@ if (!function_exists('filterHTML')) {
         return htmlentities($html);
     }
 }
+
+
+
+if (!function_exists('advancedDebug')) {
+    function advancedDebug($expression)
+    {
+        echo '<pre>';
+        print_r($expression);
+        echo '</pre>';
+
+        echo "<br/>=============details=============<br/>";
+
+        echo '<pre>';
+        var_dump($expression);
+        echo '</pre>';
+    }
+}
+
+if (!function_exists('printSeparator')) {
+    function printSeparator()
+    {
+        echo "<br/>===============================<br/>";
+    }
+}
